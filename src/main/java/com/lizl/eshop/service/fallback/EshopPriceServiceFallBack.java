@@ -1,11 +1,13 @@
 package com.lizl.eshop.service.fallback;
 
 import com.lizl.eshop.service.EshopPriceService;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * Created by lizhaoliang on 18/3/20.
  */
+@Component
 public class EshopPriceServiceFallBack implements EshopPriceService{
     @Override
     public String findByProductId(@RequestParam(value = "productId") Integer productId) {

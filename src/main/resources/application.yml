@@ -13,11 +13,7 @@ spring:
     url: jdbc:mysql://172.27.35.3:3306/eshop
     username: root
     password: root
-  rabbitmq:
-    host: 172.27.35.3
-    port: 5672
-    username: rabbitadmin
-    password: 123456
+
 
 feign:
     hystrix:

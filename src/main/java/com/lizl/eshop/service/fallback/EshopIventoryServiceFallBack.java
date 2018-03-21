@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Component
 public class EshopIventoryServiceFallBack implements EshopIventoryService {
     @Override
-    public String findByProductId(@RequestParam(value = "id") Integer id) {
+    public String findByProductId(@RequestParam(value = "productId") Integer productId) {
         return "降级数据";
     }
 
